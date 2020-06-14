@@ -5,7 +5,7 @@ pkgs: attrs:
 
     builder = "${bash}/bin/bash";
     args = [ ./builder.sh ];
-    baseInputs = [ findutils gnutar gzip gnumake gcc binutils-unwrapped coreutils gawk gnused gnugrep patchelf ];
+    baseInputs = [ findutils help2man gnutar gzip gnumake gcc binutils-unwrapped coreutils gawk gnused gnugrep patchelf ];
     buildInputs = [];
     system = builtins.currentSystem;
   };
