@@ -1,7 +1,7 @@
 pkgs: attrs:
   with pkgs;
   let defaultAttrs = rec {
-    version = "1.8.5";
+    version = "3.10.3";
 
     builder = "${bash}/bin/bash";
     args = [ ./builder.sh ];
