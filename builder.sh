@@ -16,9 +16,9 @@ done
 
 ./configure --prefix=$out
 
-make check
-make ptcheck
-make time
+#make check
+#make ptcheck
+#make time
 make install
 
 find $out -type f -exec patchelf --shrink-rpath '{}' \; -exec strip '{}' \; 2>/dev/null
